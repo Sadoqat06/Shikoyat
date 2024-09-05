@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+
+<div>
+ <!-- Loop to display existing complaints -->
+ {% for i in response %}
+ <h4>{{ i.company }}</h4>
+ <h6>{{ i.status }}</h6>
+ <button>More</button>
+ {% endfor %}
+</div>
+
+<!-- Form to create a new complaint -->
+<div>
+ <h3>Create a New Complaint</h3>
+ <form action="/submit-complaint" method="POST">
+   <label for="company">Company Name:</label>
+   <input type="text" id="company" name="company" required><br><br>
+   
+   <label for="status">Status:</label>
+   <input type="text" id="status" name="status" required><br><br>
+   
+   <label for="description">Description:</label><br>
+   <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+   
+   <button type="submit">Submit Complaint</button>
+ </form>
+</div>
+
+</body>
+</html>

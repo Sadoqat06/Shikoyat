@@ -1,0 +1,85 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-wrapper {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 30px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.country-selector {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.phone-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.phone-input input {
+    width: 48%;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #555;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    background-color: red;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+.quick-login {
+    color: red;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.quick-login:hover {
+    text-decoration: underline;
+}
+ 
